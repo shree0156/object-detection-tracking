@@ -1,7 +1,8 @@
-Object Detection & Tracking in Football Matches
+# Object Detection & Tracking in Football Matches
+
 This project performs real-time object detection and multi-object tracking for football match videos. It detects players, referees, and the football , and keeps consistent IDs across frames. It uses YOLOv8 for detection and SORT (Simple Online Realtime Tracker) for tracking.
 
-Project Structure
+# Project Structure
 bash
 Copy
 Edit
@@ -12,10 +13,11 @@ Edit
 ├── sample_video.mp4              # Example input video
 ├── README.md                     # Project documentation
 └── Object_Detection_Tracking_Report.pdf  # Final report
-Requirements & Setup
+
+# Requirements & Setup
 All required packages are listed below. You don't need a separate requirements.txt.
 
-Dependencies:
+# Dependencies:
 Python 3.8+
 
 Ultralytics (pip install ultralytics)
@@ -24,7 +26,7 @@ OpenCV (pip install opencv-python)
 
 NumPy (pip install numpy)
 
-🔧 Installation Steps:
+# Installation Steps:
 Clone the repository
 
 bash
@@ -32,7 +34,8 @@ Copy
 Edit
 git clone https://github.com/shree0156/object-detection-tracking.git
 cd object-detection-tracking
-Install dependencies
+
+# Install dependencies
 (Use a virtual environment if you prefer)
 
 nginx
@@ -56,22 +59,22 @@ Assign unique and consistent IDs.
 
 Show a live video window with bounding boxes and IDs.
 
-Notes
+# Notes
 The model used is a fine-tuned YOLOv8 trained to detect 3 classes: player, referee, and ball.
 
 SORT has been adapted to keep only one ball in detection even if multiple are found.
 
 Player tracking is consistent across frames using unique IDs.
 
-Output
+# Output
 Live video preview with tracked objects.
 
 Optionally, you can modify the code to save output video (using cv2.VideoWriter).
 
-Report
+# Report
 The project report explaining the approach, experiments, challenges, and future improvements is available as Object_Detection_Tracking_Report.pdf in this repository.
 
-Credits
+# Credits
 Ultralytics YOLOv8
 
 SORT Tracker
